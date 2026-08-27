@@ -125,3 +125,4 @@ IMPORTANTE PARA O TESTE:
 - O smartphone precisa acessar a aplicação por HTTPS.
 - O acesso ao CDN do jsPDF deve estar liberado na rede.
 - O compartilhamento de arquivo depende do suporte do Safari/iOS ao Web Share API.
+Publicação externa Vercel - v1.4
