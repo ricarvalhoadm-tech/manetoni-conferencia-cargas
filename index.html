@@ -4,43 +4,123 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
   <meta name="theme-color" content="#111111"/>
-  <title>Conferência de Cargas | Manetoni | v1.4</title>
+
+  <title>Conferência de Cargas | Manetoni | v1.5</title>
+
   <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="styles.css"/>
 </head>
+
 <body>
+
   <header class="topbar">
+
     <div class="brand-wrap">
-      <img src="logo-manetoni.png" alt="Manetoni" class="brand-logo">
+
+      <img
+        src="logo-manetoni.png"
+        alt="Manetoni"
+        class="brand-logo"
+      >
+
       <div>
-        <div class="subtitle">Conferência de Cargas</div>
+        <div class="subtitle">
+          Conferência de Cargas
+        </div>
       </div>
+
     </div>
-    <button id="btnHome" class="ghost">Início</button>
+
+    <button
+      id="btnHome"
+      class="ghost"
+      type="button"
+    >
+      Início
+    </button>
+
   </header>
+
 
   <main id="app"></main>
 
+
   <nav class="bottom-nav">
-    <button data-nav="home">Início</button>
-    <button data-nav="andamento">Em andamento</button>
-    <button data-nav="historico">Histórico</button>
-    <button data-nav="indicadores">Indicadores</button>
+
+    <button
+      data-nav="home"
+      type="button"
+    >
+      Início
+    </button>
+
+    <button
+      data-nav="andamento"
+      type="button"
+    >
+      Em andamento
+    </button>
+
+    <button
+      data-nav="historico"
+      type="button"
+    >
+      Histórico
+    </button>
+
+    <button
+      data-nav="indicadores"
+      type="button"
+    >
+      Indicadores
+    </button>
+
   </nav>
 
+
   <template id="modalTemplate">
+
     <div class="modal-backdrop">
+
       <div class="modal-card">
+
         <div class="modal-header">
+
           <h3 id="modalTitle"></h3>
-          <button id="modalClose" class="ghost">Fechar</button>
+
+          <button
+            id="modalClose"
+            class="ghost"
+            type="button"
+          >
+            Fechar
+          </button>
+
         </div>
+
         <div id="modalBody"></div>
+
       </div>
+
     </div>
+
   </template>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+  <!-- PDF -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js">
+  </script>
+
+
+  <!-- SUPABASE -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2">
+  </script>
+
+
+  <!-- APLICAÇÃO -->
   <script src="app.js"></script>
+
 </body>
 </html>
