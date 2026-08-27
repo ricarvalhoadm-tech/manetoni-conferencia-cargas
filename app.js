@@ -6,7 +6,7 @@
 const APP_VERSION = '1.5';
 
 const SUPABASE_URL =
-  'https://jdwdtsbwoerjcgauykdk.supabase.co';
+  'https://jdwdtsbwoerjcqauykdk.supabase.co';
 
 const SUPABASE_KEY =
   'sb_publishable_Qee2-O8RMWTVDAEWTAjbjg_e0uucMkR';
